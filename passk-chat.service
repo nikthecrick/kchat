@@ -1,0 +1,23 @@
+[Unit]
+Description=Passk Chat Application
+After=network.target
+
+[Service]
+Type=simple
+User=z
+WorkingDirectory=/home/z/my-project
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=RP_ID=keychat.nikniksen.de
+Environment=ORIGIN=https://keychat.nikniksen.de
+Environment=JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+Environment=DATABASE_URL=file:/home/z/my-project/db/custom.db
+ExecStart=/usr/bin/node .next/standalone/server.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=passk-chat
+
+[Install]
+WantedBy=multi-user.target

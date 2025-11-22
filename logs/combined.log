@@ -1,0 +1,90 @@
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }
+2025-11-20 21:04 +00:00:  ⨯ Failed to start server
+2025-11-20 21:04 +00:00: Error: listen EADDRINUSE: address already in use 0.0.0.0:3000
+2025-11-20 21:04 +00:00:     at <unknown> (Error: listen EADDRINUSE: address already in use 0.0.0.0:3000) {
+2025-11-20 21:04 +00:00:   code: 'EADDRINUSE',
+2025-11-20 21:04 +00:00:   errno: -98,
+2025-11-20 21:04 +00:00:   syscall: 'listen',
+2025-11-20 21:04 +00:00:   address: '0.0.0.0',
+2025-11-20 21:04 +00:00:   port: 3000
+2025-11-20 21:04 +00:00: }

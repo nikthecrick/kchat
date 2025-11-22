@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                   String    @id @default(cuid())
+  email                String    @unique
+  name                 String?
+  passkeyCredentialId  String?   @unique
+  passkeyPublicKey     String?
+  passkeyCounter       BigInt?
+  e2ePublicKey         String?
+  e2ePrivateKey        String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  
+  // Relations
+  sentMessages         Message[] @relation("SentMessages")
+  receivedMessages     Message[] @relation("ReceivedMessages")
+  chatSessions1        ChatSession[] @relation("Participant1Sessions")
+  chatSessions2        ChatSession[] @relation("Participant2Sessions")
+}
+
+model ChatSession {
+  id                String    @id @default(cuid())
+  participant1Id    String
+  participant2Id    String
+  rootKey           String?
+  senderChainKey    String?
+  receiverChainKey  String?
+  senderRatchetKey  String?
+  receiverRatchetKey String?
+  messageCounter    BigInt    @default(0)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  
+  // Relations
+  participant1      User      @relation("Participant1Sessions", fields: [participant1Id], references: [id], onDelete: Cascade)
+  participant2      User      @relation("Participant2Sessions", fields: [participant2Id], references: [id], onDelete: Cascade)
+  messages          Message[]
+  
+  @@unique([participant1Id, participant2Id])
+}
+
+model Message {
+  id                String    @id @default(cuid())
+  chatSessionId     String
+  senderId          String
+  receiverId        String
+  encryptedContent  String
+  messageKey        String?
+  previousChainKey  String?
+  messageNumber     BigInt
+  timestamp         DateTime  @default(now())
+  delivered         Boolean   @default(false)
+  read              Boolean   @default(false)
+  
+  // Relations
+  chatSession       ChatSession @relation(fields: [chatSessionId], references: [id], onDelete: Cascade)
+  sender            User        @relation("SentMessages", fields: [senderId], references: [id], onDelete: Cascade)
+  receiver          User        @relation("ReceivedMessages", fields: [receiverId], references: [id], onDelete: Cascade)
+}

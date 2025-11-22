@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "kchat",
+      "script": "node .next/standalone/server.js",
+      "cwd": "/home/ubuntu/kchat",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "1G",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 3000,
+        "RP_ID": "kchat.nikniksen.de",
+        "ORIGIN": "https://kchat.nikniksen.de",
+        "JWT_SECRET": "your-super-secret-jwt-key-change-this-in-production",
+        "DATABASE_URL": "file:./db/custom.db"
+      },
+      "log_file": "/home/ubuntu/kchat/logs/combined.log",
+      "out_file": "/home/ubuntu/kchat/logs/out.log",
+      "error_file": "/home/ubuntu/kchat/logs/error.log",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "merge_logs": true,
+      "max_restarts": 10,
+      "min_uptime": "10s"
+    }
+  ]
+}
